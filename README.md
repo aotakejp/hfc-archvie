@@ -69,7 +69,7 @@ Collection of scripts for handling archives in Hidemaru Filer Classic (Windows a
 
 ## 作者
 
-  - Takeshi Aoki  https://github.com/aotakejp
+  - Takeshi Aoki  https://bit.ly/aotakejp  https://github.com/aotakejp
 
 ## ライセンス
 

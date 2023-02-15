@@ -1,6 +1,6 @@
 // Create archvie file for Hidemaru Filer Classic
 // Author  takeshi aoki
-// Contact https://github.com/aotakejp
+// Contact https://bit.ly/aotakejp  https://github.com/aotakejp
 // License  http://www.opensource.org/licenses/mit-license.html  MIT License
 // Version  0.1
 
