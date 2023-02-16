@@ -21,7 +21,7 @@ Collection of scripts for handling archives in Hidemaru Filer Classic (Windows a
 ## 必要条件
 
   - Windows
-  - 秀丸ファイラーClassic
+  - [秀丸ファイラーClassic](https://hide.maruo.co.jp/software/hmfilerclassic.html)
   - 7-Zip  22.01 or later 
   - GNU tar  1.23 or later
   - xz  5.29 or later
