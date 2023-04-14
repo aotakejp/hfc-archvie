@@ -44,12 +44,13 @@ try {
     throw errorMessage
   }
   var extension = archiveFilePath.match(
-    /\.zip$|\.7z$|\.txz$|\.tbz2$|\.tgz$|\.tar\.gz$|\.tar\.bz2$|\.tar\.xz$|\.tar$/
+    /\.zip$|\.7z$|\.txz$|\.tbz2$|\.tgz$|\.tar\.gz$|\.tar\.bz2$|\.tar\.xz$|\.tar$/i
   )
   if (extension === null) {
     var errorMessage = 'Invalid Extension!'
     throw errorMessage
   }
+  extension = extension[0].toLowerCase()
   var drive = sourceFilePath.match(/^[a-zA-Z]:/)
   var directoryPath = archiveFilePath.replace(/\\[^\\]+$/, '')
   if (!IsDirectoryExist(directoryPath)) {

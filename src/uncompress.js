@@ -25,9 +25,10 @@ try {
   var command =
     EXEC_7Z + ' x -o"' + archiveDirectory + '" "' + archiveFilePath + '" -aos'
   var tarExtension = archiveFilePath.match(
-    /\.tgz$|\.tbz2$|\.txz$|\.tar\.gz$|\.tar\.bz2$|\.tar\.xz$|\.tar$/
+    /\.tgz$|\.tbz2$|\.txz$|\.tar\.gz$|\.tar\.bz2$|\.tar\.xz$|\.tar$/i
   )
   if (tarExtension != null) {
+    tarExtension = tarExtension[0].toLowerCase()
     var option =
       tarExtension == '.txz' || tarExtension == '.tar.xz' ? '-xJkf' : '-xkf'
     command =

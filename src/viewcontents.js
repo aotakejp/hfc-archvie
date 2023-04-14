@@ -12,12 +12,13 @@ var EXEC_TAR = '%USERPROFILE%\\scoop\\shims\\tar.exe --force-local'
 var archiveFilePath = getItemPath(getNextItem(-1, 2))
 try {
   var extension = archiveFilePath.match(
-    /\.zip$|\.7z$|\.txz$|\.tbz2$|\.tgz$|\.tar\.gz$|\.tar\.bz2$|\.tar\.xz$|\.tar$/
+    /\.zip$|\.7z$|\.txz$|\.tbz2$|\.tgz$|\.tar\.gz$|\.tar\.bz2$|\.tar\.xz$|\.tar$/i
   )
   if (extension === null) {
     var errorMessage = 'Invalid Extension!'
     throw errorMessage
   }
+  extension = extension[0].toLowerCase()
   var command =
     extension == '.zip' || extension == '.7z'
       ? EXEC_7Z + ' l '
